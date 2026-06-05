@@ -13,7 +13,19 @@ class MyApp extends StatelessWidget {
   {
     return MaterialApp(
       home: Scaffold(
-        body: Text('new widgets'),
+        body: Column(
+          children: [
+            Container(
+              height: 200,
+              width:  200,
+              decoration:  BoxDecoration(
+                color:  Colors.red,
+
+              ),
+              child:  Text('hey abdulllah how u doin'),
+            )
+          ],
+        )
       )
     );
   }
