@@ -17,13 +17,31 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // Circular avatar Widget
-                  CircleAvatar(
-                    radius: 70,
-                    backgroundColor: Colors.black,
-                    backgroundImage:  NetworkImage('some image.com'),
-
+                  // divider
+                  SizedBox(
+                    // veritcal
+                    height: 100,
+                    child: Divider(
+                      color: Colors.black,
+                      thickness: 3,
+                    ),
+                  ),
+                  VerticalDivider(
+                    thickness: 2,
+                    color: Colors.blue,
+                  ),
+                  //horizontal divider
+                  Divider(
+                    color: Colors.black,
+                    thickness: 2,
                   )
+                  // Circular avatar Widget
+                  // CircleAvatar(
+                  //   radius: 70,
+                  //   backgroundColor: Colors.black,
+                  //   backgroundImage:  NetworkImage('some image.com'),
+                  //
+                  // )
                 // stack widget
                 //   SizedBox(
                 //     // stack widget LIFO
