@@ -21,9 +21,10 @@ class MyApp extends StatelessWidget {
                 leading: CircleAvatar(
                   radius: 70,
                   backgroundColor: Colors.black,
-                  backgroundImage: NetworkImage('some image.com'),
+                  backgroundImage: NetworkImage('some image.com',
+                  ),
                 ),
-                title: Text('Abdullah Amin'),
+                title: Text('Abdullah  Amin'),
                 subtitle: Text('hey how u doin!'),
                 trailing: Text('10:50'),
 
