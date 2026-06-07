@@ -17,11 +17,39 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        flex: 1,
+                        child: Container(
+                        height: 100,
+                        color: Colors.red,
+                        child: Text('container')),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                            height: 100,
+                            color: Colors.green,
+                            child: Text('container')
+                        ),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                            height: 100,
+                            color: Colors.blue,
+                            child: Text('container')
+                        ),
+                      ),
+
+                    ],
+                  ),
                   Center(
                     child: Container(
                       height: 250,
                       width: 250,
-                      transform: Matrix4.rotationZ(.3),
+
 
                       decoration: BoxDecoration(
                         color: Colors.red,
@@ -29,6 +57,7 @@ class MyApp extends StatelessWidget {
                         border: Border.all(color: Colors.black
                         , width: 3,),
                         image: DecorationImage(
+                          fit: BoxFit.fill,
                           image: NetworkImage('https://images.pexels.com/photos/15315565/pexels-photo-15315565.jpeg')
                         ),
                         boxShadow: [
