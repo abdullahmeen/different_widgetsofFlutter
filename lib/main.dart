@@ -19,25 +19,22 @@ class MyApp extends StatelessWidget {
                 children: [
                   Center(
                     child: Container(
-                      height: 200,
-                      width: 200,
-                      margin: EdgeInsets.only(
-                        top: 100,
-                        left: 120,
-                        right: 40,
-                      ),
-                      padding: EdgeInsets.only(left : 50
-                      , top:  50,
-                      ),
+                      height: 250,
+                      width: 250,
+                      transform: Matrix4.rotationZ(.3),
+
                       decoration: BoxDecoration(
                         color: Colors.red,
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(10),
                         border: Border.all(color: Colors.black
                         , width: 3,),
+                        image: DecorationImage(
+                          image: NetworkImage('https://images.pexels.com/photos/15315565/pexels-photo-15315565.jpeg')
+                        ),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.deepOrange,
-                            blurRadius: 50,
+                            blurRadius: 10,
                             blurStyle: BlurStyle.outer,
                           )
                         ]
@@ -46,7 +43,7 @@ class MyApp extends StatelessWidget {
                       ),
                       child: Center(
                         child: Text(
-                          'hey abdulllah how u doin',
+                          'Login',
                         ),
                       ),
                     ),
