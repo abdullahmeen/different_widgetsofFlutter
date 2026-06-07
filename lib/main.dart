@@ -17,18 +17,23 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              ListTile(
-                leading: CircleAvatar(
-                  radius: 70,
-                  backgroundColor: Colors.black,
-                  backgroundImage: NetworkImage('some image.com',
-                  ),
-                ),
-                title: Text('Abdullah  Amin'),
-                subtitle: Text('hey how u doin!'),
-                trailing: Text('10:50'),
 
-              ),
+              ListView.builder(
+                itemCount: 20,
+                itemBuilder: (context,index){
+                return  ListTile(
+                  leading: CircleAvatar(
+                    radius: 70,
+                    backgroundColor: Colors.black,
+                    backgroundImage: NetworkImage('some image.com',
+                    ),
+                  ),
+                  title: Text('Abdullah  Amin'),
+                  subtitle: Text('hey how u doin!'),
+                  trailing: Text('10:50'),
+
+                );
+              },)
               //listform field
               // Padding(
               //   padding: const EdgeInsets.all(8.0),
