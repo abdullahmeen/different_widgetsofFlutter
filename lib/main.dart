@@ -17,24 +17,33 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // divider
-                  SizedBox(
-                    // veritcal
-                    height: 100,
-                    child: Divider(
-                      color: Colors.black,
-                      thickness: 3,
-                    ),
-                  ),
-                  VerticalDivider(
-                    thickness: 2,
-                    color: Colors.blue,
-                  ),
-                  //horizontal divider
-                  Divider(
-                    color: Colors.black,
-                    thickness: 2,
-                  )
+                  // RIch text and text span
+                  RichText(text:TextSpan(
+                    text: "Don't have an account? ",
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(fontSize : 50),
+                    children: [
+                      TextSpan( text: "sign up" , style: TextStyle(decoration: TextDecoration.underline, fontWeight: FontWeight.bold,fontSize: 24)),
+
+                    ]
+                  ))
+                  // // divider
+                  // SizedBox(
+                  //   // veritcal
+                  //   height: 100,
+                  //   child: Divider(
+                  //     color: Colors.black,
+                  //     thickness: 3,
+                  //   ),
+                  // ),
+                  // VerticalDivider(
+                  //   thickness: 2,
+                  //   color: Colors.blue,
+                  // ),
+                  // //horizontal divider
+                  // Divider(
+                  //   color: Colors.black,
+                  //   thickness: 2,
+                  // )
                   // Circular avatar Widget
                   // CircleAvatar(
                   //   radius: 70,
