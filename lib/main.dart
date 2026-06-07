@@ -33,7 +33,15 @@ class MyApp extends StatelessWidget {
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(30),
                         border: Border.all(color: Colors.black
-                        , width: 3,)
+                        , width: 3,),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.deepOrange,
+                            blurRadius: 50,
+                            blurStyle: BlurStyle.outer,
+                          )
+                        ]
+
 
                       ),
                       child: Center(
