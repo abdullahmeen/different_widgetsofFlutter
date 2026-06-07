@@ -17,35 +17,43 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    // stack widget LIFO
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        Container(
-                          height: 250,
-                          width: 250,
-                          color: Colors.red,
-                        ),
-                        Container(
-                          height: 250,
-                          width: 250,
-                          color: Colors.blue,
-                        ),
-                        Positioned(
-                          top: 50,
-                          left: 50,
-                          child: Container(
-                            height: 100,
-                            width: 100,
-                            color: Colors.green,
-                          ),
+                  // Circular avatar Widget
+                  CircleAvatar(
+                    radius: 70,
+                    backgroundColor: Colors.black,
+                    backgroundImage:  NetworkImage('some image.com'),
 
-                        ),
-                        Text('heyyy!'),
-                      ],
-                    ),
                   )
+                // stack widget
+                //   SizedBox(
+                //     // stack widget LIFO
+                //     child: Stack(
+                //       alignment: Alignment.center,
+                //       children: [
+                //         Container(
+                //           height: 250,
+                //           width: 250,
+                //           color: Colors.red,
+                //         ),
+                //         Container(
+                //           height: 250,
+                //           width: 250,
+                //           color: Colors.blue,
+                //         ),
+                //         Positioned(
+                //           top: 50,
+                //           left: 50,
+                //           child: Container(
+                //             height: 100,
+                //             width: 100,
+                //             color: Colors.green,
+                //           ),
+                //
+                //         ),
+                //         Text('heyyy!'),
+                //       ],
+                //     ),
+                //   )
 
                   // Row(
                   //   children: [
